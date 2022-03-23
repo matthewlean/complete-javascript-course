@@ -145,14 +145,103 @@ x -- means x - 1
 
 ### Comparison Operators
 
-
 >
 <
 >= 
 <= 
 
-## Operator Precedence
+## 1.15 Operator Precedence
 
 ```html
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table
 ```
+
+## 1.16
+
+Coding Challenge #1 
+
+## 1.17 
+
+### Template Literal
+Template literal, write a string in an easier way. ES6
+
+write with `back slash`
+
+call variables ${firstName}
+
+```js
+const mattNew = `I'm ${firstName}, a ${year - birthYear} year old ${job};
+console.log(mattNew)`;
+```
+
+start using backticks 
+
+### Multi line string
+
+Old
+```js
+console.log('String with \n\
+multiple \n\
+lines');
+```
+
+New
+```js
+console.log(`String
+multiple
+lines`);
+```
+
+## 1.18 If Else
+
+If Else control structure
+
+```js 
+
+if(){
+
+} else{
+
+}
+```
+
+## 1.19 Coding Challenge 2 
+
+```js 
+
+let markMass = 78; 
+let markHeight = 1.69; 
+let johnMass = 92;
+let johnHeight = 1.95; 
+
+let markBMI = markMass / (markHeight ** 2 );
+let johnBMI = johnMass / (johnHeight ** 2 );
+
+let markHeigherBMI = markBMI > johnBMI; 
+console.log(markBMI, johnBMI, markHeigherBMI);
+
+if(markHeigherBMI = true){
+    console.log(`Mark's BMI is heigher than Johns'!. Marks BMI is ${markBMI}`);
+} else{
+    console.log(`Johns BMI is heigher than Mark's!. John's BMI is ${johnBMI}`);
+}
+```
+
+## 1.20 Type Conversion
+
+Convert string to number
+
+```js
+console.log(Number(inputYear));
+```
+
+## 1.12 Truthy Falsy
+
+falsy values: 0, '', undefined, null, Nan
+
+=== strict equality
+== loose equality - type coersion 
+
+use strict as a rule 
+
+
