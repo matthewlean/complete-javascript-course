@@ -196,4 +196,82 @@ console.log(firstName);
 // }
 
 // 1.22 Equality Operator
+// const age = 18;
 
+// if(age === 18) console.log('You became an adult');
+
+// const favourite = Number( prompt("What's your favourite number"));
+
+// console.log(favourite);
+
+// console.log(typeof favourite);
+
+// if (favourite === 23){
+//     console.log('Cool 23 is cool');
+// } else if ( favourite === 7){
+//     console.log('7 is cool');
+// } else {
+//     console.log("number isn't 23 or 7");
+// } 
+
+
+// if ( favourite !== 23){
+//     console.log('Why not 23?');
+// }
+
+// 1.24 Logical Operators
+
+// const hasDriversLicense = true; 
+// const hasGoodVision = true; 
+
+// console.log(hasDriversLicense && hasGoodVision );
+// console.log(hasDriversLicense || hasGoodVision );
+// console.log(!hasDriversLicense);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// // if (hasDriversLicense && hasGoodVision){
+// //     console.log("Sarah can drive");
+// // } else{
+// //     console.log("Someone else should drive");
+// // }
+
+// const isTired = false;
+
+// console.log( hasDriversLicense && hasGoodVision && isTired);
+
+// if (hasDriversLicense && hasGoodVision && !isTired){
+//     console.log("Sarah can drive");
+// } else {
+//     console.log("Someone else should drive");
+// }
+
+// 1.25 Coding Challenge #3 
+
+// const dolphinsGame1 = 96;
+// const dolphinsGame2 = 108;
+// const dolphinsGame3 = 89;
+
+// const dolphinsAve = ( (dolphinsGame1 + dolphinsGame2 + dolphinsGame3) /3 );
+// console.log(dolphinsAve);
+
+// const koalasGame1 = 88;
+// const koalasGame2 = 91;
+// const koalasGame3 = 110;
+
+// const koalasAve = ( (koalasGame1 + koalasGame2 + koalasGame3) /3 );
+// console.log(koalasAve);
+
+// if (koalasAve > dolphinsAve && koalasAve > 100){
+//     console.log(`The Koala's average score of ${koalasAve} is greater than the dolphins average of ${dolphinsAve}.`);
+// } else if (koalasAve < dolphinsAve && dolphinsAve > 100) {
+//     console.log(`The Dolphin's average score of ${dolphinsAve} is greater than the Koala's average score of ${koalasAve}.`)
+// } else if (koalasAve === dolphinsAve > 100){
+//     console.log(`The average score of both teams was equal at ${dolphinsAve}. Wow! how did that happen?`);
+// } else if ( koalasAve || dolphinsAve > 100){
+//     console.log(`They didn't score 100 points`);
+// }
+
+// 1.26 Switch Statement 
+
+const day = 'monday';

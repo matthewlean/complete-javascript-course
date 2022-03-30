@@ -235,7 +235,7 @@ Convert string to number
 console.log(Number(inputYear));
 ```
 
-## 1.12 Truthy Falsy
+## 1.21 Truthy Falsy
 
 falsy values: 0, '', undefined, null, Nan
 
@@ -244,4 +244,53 @@ falsy values: 0, '', undefined, null, Nan
 
 use strict as a rule 
 
+## 1.22 Equality Operator == vs ===
+
+Comparison operator == ===
+
+=== Strict, DOES NOT perform type coercion
+
+== loose equality operator, it DOES type coercion 
+
+!== Strictly not equal 
+!= Loose not equal
+
+## 1.23 Boolean Logic 
+
+And && 
+Or  ||
+Not ! 
+ 
+## 1.24 Logical Operators
+
+## 1.25 Coding Challenge #3 
+
+```js 
+
+const dolphinsGame1 = 96;
+const dolphinsGame2 = 108;
+const dolphinsGame3 = 89;
+
+const dolphinsAve = ( (dolphinsGame1 + dolphinsGame2 + dolphinsGame3) /3 );
+console.log(dolphinsAve);
+
+const koalasGame1 = 88;
+const koalasGame2 = 91;
+const koalasGame3 = 110;
+
+const koalasAve = ( (koalasGame1 + koalasGame2 + koalasGame3) /3 );
+console.log(koalasAve);
+
+if (koalasAve > dolphinsAve && koalasAve > 100){
+    console.log(`The Koala's average score of ${koalasAve} is greater than the dolphins average of ${dolphinsAve}.`);
+} else if (koalasAve < dolphinsAve && dolphinsAve > 100) {
+    console.log(`The Dolphin's average score of ${dolphinsAve} is greater than the Koala's average score of ${koalasAve}.`)
+} else if (koalasAve === dolphinsAve > 100){
+    console.log(`The average score of both teams was equal at ${dolphinsAve}. Wow! how did that happen?`);
+} else if ( koalasAve || dolphinsAve > 100){
+    console.log(`They didn't score 100 points`);
+}
+```
+
+## 1.26 Switch Statement 
 
