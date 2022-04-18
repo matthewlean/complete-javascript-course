@@ -336,4 +336,147 @@ so can be used in a ternary operator
 
 ternary operator good for small decision
 
-## 
+# Javascript Fundamentals Part 2 
+
+## 1.32 Strict Mode
+
+```js
+'use strict';
+```
+
+Displays errors in spelling mistakes for variables
+
+Prevents use of reserved words
+
+## 1.33 Functions
+
+Create function 
+
+Call function 
+
+```js
+logger();
+```
+
+Fruit juice function
+- define function
+- call funtion 
+- add parameters 
+- save to a varable
+- log to the console
+
+Not all functions need to return 
+Not all functions need perameters
+
+```js
+function fruitProcessor(apples, oranges){
+    console.log(apples, oranges);
+    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+    return juice;
+}
+
+const appleJuice = fruitProcessor(5, 0);
+console.log(appleJuice);
+```
+
+Functions are good for reusable code
+
+DRY Code
+Don't 
+Repeat
+Yourself 
+
+```js
+console.log(); // is a function
+```
+
+```js
+Number('23'); // is a function 
+```
+
+## 1.34 Function Declarations vs Expressions 
+
+Inside a function you don't need to declare a varaible to return it. 
+You can instead return it right away. 
+
+```js 
+function calcAge1(birthYear){
+    return 2022 - birthYear;
+}
+
+//instead of 
+function calcAge1(birthYear){
+    const myAge = 2022 = birthYear;
+    return myAge; 
+}
+``` 
+
+```js
+// Function declaration
+function calcAge1(birthYear){
+    return 2022 - birthYear;
+}
+const age1 = calcAge1(1994);
+``` 
+
+```js 
+// Function expression
+const calcAge2 = function (birthYear){
+    return 2022 - birthYear;
+}
+const age2 = calcAge2(1994);
+```
+
+## 1.35 Arrow Functions 
+
+Arrow is useful for one line functions 
+
+```js
+// Arrow Function 
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1994);
+console.log(age3);
+
+const untilRetirement = (birthYear , firstName) => {
+    const age = 2022 - birthYear;
+    const retirement = 65 - age;
+    // return retirement;
+    return `${firstName} retires in ${retirement}.`
+}
+```
+
+## 1.36 Functions Calling other Functions
+
+```js
+function cutFruit(fruit){
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges){
+    const applePieces = cutFruit(apples);
+    const orangePieces = cutFruit(oranges);
+
+    const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+    return juice;
+}
+
+console.log(fruitProcessor(2,3));
+```
+
+## 1.37 Reviewing Functions
+
+### Function delcaration 
+- Function that can be used before it's declared
+
+### Function expression 
+- Essentially a function value stored in a variable
+
+### Arrow function 
+- Quick one-line functions. Has no 'this' keyword
+
+function functionName ( parameter1, parameter2){
+    const valuetoCalculate = a + b; 
+    return valuetoCalculate;
+}
+
+const functionName ( 1, 2);

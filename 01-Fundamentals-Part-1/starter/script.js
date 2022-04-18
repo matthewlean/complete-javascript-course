@@ -274,4 +274,68 @@ console.log(firstName);
 
 // 1.26 Switch Statement 
 
-const day = 'monday';
+// const day = 'ss';
+
+// switch(day) {
+//     case 'monday': // day === 'monday'
+//         console.log('Plan course');
+//         console.log('Go to coding meeting');
+//         break;
+//     case 'tuesday': // day === 'monday'
+//         console.log('Prepare');
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log('Nothing to do');
+//         break;
+//     case 'friday':
+//         console.log('Record');
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//         console.log('Weekend!');
+//         break;
+//     default:
+//         console.log('Not a valid day');
+// }
+
+// if (day === 'monday'){
+//     console.log('Monday');
+// } else if (day === 'tuesday'){
+//     console.log('Tuesday');
+// } else if ( day === 'wednesday' || day === 'thursday'){
+//     console.log('Wednesday or Thursday');
+// } else {
+//     console.log('not a day');
+// }
+
+// 1.28 Conditional (Ternary) Operator
+
+// const age = 23;
+// age >= 18 ? console.log('I like to drink wine') : console.log('I like to drink water');
+
+// const drink = age >= 18 ? 'wine' : 'water';
+// console.log(drink);
+
+// 1.29 Coding Challenge 4
+
+// const bill = 275;
+// console.log(bill);
+
+// // let tip;
+
+// // if (bill >= 50 && bill <= 300){
+// //     tip = 15; 
+// // } else {
+// //     tip = 20;
+// // }
+
+// let tipPercent = bill >= 50 && bill <= 300 ? 15 : 20; 
+// console.log(tipPercent);
+
+// let tip = bill * ( tipPercent / 100);
+
+// // let tipCheck = ( 745 * 0.2 ) + 745;
+// // console.log(tipCheck);
+
+// console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill+tip}.`);
