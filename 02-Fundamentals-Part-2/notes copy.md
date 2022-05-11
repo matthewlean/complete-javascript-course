@@ -480,3 +480,33 @@ function functionName ( parameter1, parameter2){
 }
 
 const functionName ( 1, 2);
+
+## 1.39 Introduction to Arrays
+
+- Only primative values are immutable
+- Arrays are not primative value so we can mutate it 
+
+```
+const friends = ['Jed','Chris','Rich'];
+```
+
+### First value
+```js
+console.log(friends[0]);
+```
+
+### Last value
+```js
+console.log(friends[friends.length-1]);
+```
+
+### Find length 
+```js
+console.log(friends.length);
+```
+
+### Mutating array
+```js
+friends[2] = 'Mel';
+console.log(friends);
+```

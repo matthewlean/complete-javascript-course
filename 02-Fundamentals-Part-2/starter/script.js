@@ -102,23 +102,72 @@
 // console.log(untilRetirement(1994, 'Matt'));
 // console.log(untilRetirement(1950, 'Bob'));
 
-const calcAverage = scores => scores/3;
+// let calcAverage = scores => scores/3;
 
-const dolphinAve = calcAverage(44+23+71);
-const koalasAve = calcAverage(65+54+49);
+// let dolphinAve = calcAverage(44+23+71);
+// let koalasAve = calcAverage(65+54+49);
 
-console.log(dolphinAve);
-console.log(koalasAve);
+// console.log(dolphinAve);
+// console.log(koalasAve);
 
-const checkWinner = function(dolphinAve, koalasAve){
-    if (dolphinAve > koalasAve){
-        console.log(`The Dolpins win with an average of ${dolphinAve}`);
-    } else if (dolphinAve < koalasAve) {
-        console.log(`The Koalas win with an average of ${koalasAve}`);
-    } else{
-        console.log(`It's a draw! both teams have the same score`);
-    }
+// const checkWinner = function(dolphinAve, koalasAve){
+//     if (dolphinAve > koalasAve){
+//         console.log(`The Dolpins win with an average of ${dolphinAve}`);
+//     } else if (dolphinAve < koalasAve) {
+//         console.log(`The Koalas win with an average of ${koalasAve}`);
+//     } else{
+//         console.log(`It's a draw! both teams have the same score`);
+//     }
+// }
+
+// checkWinner(dolphinAve,koalasAve );
+
+// // Test 2
+// dolphinAve = calcAverage(85+54+41);
+// koalasAve = calcAverage(23+34+37);
+
+// checkWinner(dolphinAve,koalasAve );
+
+// 1.39 Introduction to Arrays
+
+const friend1 = 'Jed';
+const friend2 = 'Chris';
+const friend3 = 'Rich';
+
+const friends = ['Jed','Chris','Rich'];
+console.log(friends);
+
+// const years = new Array(1991, 1984, 2008, 2020);
+
+// First value
+console.log(friends[0]);
+
+// Last value
+console.log(friends[friends.length-1]);
+
+// Find length 
+console.log(friends.length);
+
+// Mutating array
+friends[2] = 'Mel';
+console.log(friends);
+
+const firstName = 'Matthew';
+const matt = [firstName, 'Lean', 2022-1994, friends];
+
+console.log(matt);
+
+// Array test 
+const calcAge = function (birthYear){
+    return 2037 - birthYear;
 }
 
-checkWinner(dolphinAve,koalasAve );
+const years = [1990, 1967, 2002, 2010, 2018];
 
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1,age2,age3);
+
+const ages = [ calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length-1]) ];
+console.log(ages);
