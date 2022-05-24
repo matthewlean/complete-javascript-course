@@ -510,3 +510,43 @@ console.log(friends.length);
 friends[2] = 'Mel';
 console.log(friends);
 ```
+
+## 1.40 Basic Array Operations (Methods)
+
+### Adding elements 
+.push adds elements to the end of the array
+.unshift adds elements to the beginning of the array
+
+### Remove elements
+.pop();  remove last
+.shift(); remove first 
+
+### Position in the array
+.indexOf(); shows position
+If item isn't in the list you get -1 
+
+### Includes ES6
+.includes true if in the array, false if not
+strict equality 
+
+## Coding Challenge 2.41
+
+## Introduction to Objects 2.42 
+
+Objects use {}
+Objects have properties
+Array order matters, object order doesn't matter
+
+```js
+const matt = {
+    firstName: 'Matt',
+    age: 27,
+    job: 'Web Manager',
+    friends:['Jed','Scott','Jack'],
+};
+```
+
+## Dot vs Bracket Notation 2.43
+
+
+

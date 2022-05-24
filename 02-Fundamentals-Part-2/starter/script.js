@@ -130,44 +130,137 @@
 
 // 1.39 Introduction to Arrays
 
-const friend1 = 'Jed';
-const friend2 = 'Chris';
-const friend3 = 'Rich';
+// const friend1 = 'Jed';
+// const friend2 = 'Chris';
+// const friend3 = 'Rich';
 
-const friends = ['Jed','Chris','Rich'];
-console.log(friends);
+// const friends = ['Jed','Chris','Rich'];
+// console.log(friends);
 
-// const years = new Array(1991, 1984, 2008, 2020);
+// // const years = new Array(1991, 1984, 2008, 2020);
 
-// First value
-console.log(friends[0]);
+// // First value
+// console.log(friends[0]);
 
-// Last value
-console.log(friends[friends.length-1]);
+// // Last value
+// console.log(friends[friends.length-1]);
 
-// Find length 
-console.log(friends.length);
+// // Find length 
+// console.log(friends.length);
 
-// Mutating array
-friends[2] = 'Mel';
-console.log(friends);
+// // Mutating array
+// friends[2] = 'Mel';
+// console.log(friends);
 
-const firstName = 'Matthew';
-const matt = [firstName, 'Lean', 2022-1994, friends];
+// const firstName = 'Matthew';
+// const matt = [firstName, 'Lean', 2022-1994, friends];
+
+// console.log(matt);
+
+// // Array test 
+// const calcAge = function (birthYear){
+//     return 2037 - birthYear;
+// }
+
+// const years = [1990, 1967, 2002, 2010, 2018];
+
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length - 1]);
+// console.log(age1,age2,age3);
+
+// const ages = [ calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length-1]) ];
+// console.log(ages);
+
+// Add elements
+// const friends = ['Jed','Chris','Rich'];
+// const newLength = friends.push('Jay');
+// console.log(friends, newLength);
+
+// // Add to beginning
+// friends.unshift('John');
+// console.log(friends);
+
+// // Remove elements
+// friends.pop(); // remove last element
+// const popped = friends.pop();
+// console.log(popped);
+// console.log(friends);
+
+// friends.shift(); // first 
+// console.log(friends);
+
+// console.log(friends.indexOf('Jed'));
+
+// console.log(friends.includes('Jed'));
+
+// if (friends.includes('Jed')) {
+//     console.log('Friend Jed Correct');
+// }
+
+// Coding Challenge 2
+
+// 15% 50-300 
+// 20
+
+// const calcTip = function(bill){
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2; 
+// }
+
+// const bills = [125,555,44];
+// const tips = [calcTip(bills[0]),calcTip(bills[1]), calcTip(bills[2])];
+
+// console.log (bills, tips );
+
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2], ];
+// console.log(totals);
+
+// Introduction to Objects 2.42 
+
+// Object 
+
+// uses {}
+const matt = {
+    firstName: 'Matt',
+    age: 27,
+    job: 'Web Manager',
+    friends:['Jed','Scott','Jack'],
+};
 
 console.log(matt);
 
-// Array test 
-const calcAge = function (birthYear){
-    return 2037 - birthYear;
-}
+// Dot vs Bracket Notation 2.43
 
-const years = [1990, 1967, 2002, 2010, 2018];
+// Dot
+console.log(matt.age);
 
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
-console.log(age1,age2,age3);
+// Bracket
+console.log(matt['age']);
 
-const ages = [ calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length-1]) ];
-console.log(ages);
+const nameKey = 'Name';
+console.log(matt['first' + nameKey]);
+
+// prompt
+
+// const interestedIn = prompt('What do you want to know about Matt? Choose between firstName, lastName, age, job, and friends');
+
+// if(matt[interestedIn]){
+//     console.log(matt[interestedIn]);
+// } else {
+//     console.log('Wrong request');
+// }
+
+// Adding item to object
+
+// Add via dot 
+matt.location = 'Bournemouth';
+console.log(matt);
+
+// Add via bracket 
+matt['sport'] = 'badminton';
+
+// Challenge
+
+console.log('Matt has ' + matt.friends.length + ' friends, and his best friend is called ' + matt.friends[0]);
+
+console.log(`${matt.firstName} has ${matt.friends.length} friends, and his best friend is called ${matt.friends[0]}`);
